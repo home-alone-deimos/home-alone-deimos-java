@@ -19,10 +19,15 @@ public class FastFood {
         prices.put("7", 2.25);
         prices.put("8", 3.75);
         prices.put("9", 1.25);
-        Object[] key = prices.keySet().toArray();
-        int keySpot = 1;
-        System.out.println(key[keySpot]);
-        System.out.println(prices.get(key[keySpot]));
+
+
+        for (int i = 0; i < prices.size(); i++) {
+            System.out.println(prices.get(i));
+        }
+//        Object[] key = prices.keySet().toArray();
+//        int keySpot = 1;
+//        System.out.println(key[keySpot]);
+//        System.out.println(prices.get(key[keySpot]));
         Double newTotal = 0.00;
         Double userInput = sc.nextDouble();
 
@@ -32,5 +37,6 @@ public class FastFood {
 
     public static void main(String[] args) {
         System.out.println("this is dumb.");
+        calculateTotal();
     }
 }
