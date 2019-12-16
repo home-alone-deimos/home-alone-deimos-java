@@ -1,5 +1,7 @@
 package miguel.week2;
 
+import java.util.Arrays;
+
 public class Working9To5 {
 
     public static String overTime(double[] arr) {
@@ -24,9 +26,9 @@ public class Working9To5 {
         double[] test3 = {13.25, 15, 30, 1.5}; // 1:15-3 = $52.50
         double[] test4 = {18, 20, 32.5, 2}; // 6-8 = $130.00
 
-        System.out.println(overTime(test1));
-        System.out.println(overTime(test2));
-        System.out.println(overTime(test3));
-        System.out.println(overTime(test4));
+        System.out.printf("%s -> %s%n", Arrays.toString(test1), overTime(test1));
+        System.out.printf("%s -> %s%n", Arrays.toString(test2), overTime(test2));
+        System.out.printf("%s -> %s%n", Arrays.toString(test3), overTime(test3));
+        System.out.printf("%s -> %s%n", Arrays.toString(test4), overTime(test4));
     }
 }
