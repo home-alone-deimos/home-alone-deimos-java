@@ -29,8 +29,8 @@ public class SplitAStringBasedOnVowelsAndConsonants {
         String test2 = "Hello!";
         String test3 = "What's the time?";
 
-        System.out.println(split(test1));
-        System.out.println(split(test2));
-        System.out.println(split(test3));
+        System.out.printf("%s -> %s%n", test1, split(test1));
+        System.out.printf("%s -> %s%n", test2, split(test2));
+        System.out.printf("%s -> %s%n", test3, split(test3));
     }
 }
